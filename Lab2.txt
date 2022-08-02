@@ -6,6 +6,10 @@ Step2  (Create a Key Pair)
 Login into your AWS Console 
 Create a Key pair with name "Linux" and key file format ".pem"
 Download pem file into your local machine
+=============How to create a Key Pair========================
+1.Login into your AWS Console
+2.Click on the key pairs at the left hand-side of the panel
+3.Enter the key pair name and select .pem option.
 
 Step 3(Create Security group)
 Create a Security Group with name “PublicSG” and give it any description you prefer
