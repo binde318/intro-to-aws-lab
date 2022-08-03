@@ -22,6 +22,7 @@ Run command sudo ssh -i "<keypair name" ec2-user@<public-ip-address>.compute-1.a
 To connect to your EC2 instance
 Send screenshoot for confirmation.
 Once confirmed, terminate your instance.
+NB:Based on this lesson, you can connect to your ec2 via EC2 Connect and aws cloud shell
 
 Step3(Documentation)
 Document all the steps in the file you have opened in the editor.
