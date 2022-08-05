@@ -7,6 +7,14 @@ Step 2:(NB: Use key pair and security group created in former lab)
 Launch an EC2 Instance.
 SSH into your instance and create a text file with name "ebs_backup.txt" using the command sudo touch "ebs_backup.txt"
 Run command ls -la and send screenshot for confirmation
+=======================
+-Create new instance without inputting the name
+-Click on SSH Client and copied the SSH Client key
+-To ssh into ur instance using the aws Console
+-command ssh -i ssh client key here
+-sudo touch "ebs_backup.txt" to create the file
+ls -la command to list all the file
+
 Go to Elastic Block Store tab, click Snapshots
 Create snapshot, select "Instance", select your instance ID from the drop down button
 Give description "snapshot from instance1", Tag Key= Name and Value= snapshot1
@@ -30,6 +38,8 @@ Select the volume attached to the instance, click detach volume then
 Select the Restored volume showing status available,click actions, click attach volume
 Select your new instance from the drop down button,modify the volume name path from /dev/sdf to /dev/xvda and click attach volume.
 Delete the volume you just detached.
+NB:Always detached a volume from your instance before deleting it to avoid incurring cost.
+
 
 Step 5
 Select the new instance, start the instance.
